@@ -1,0 +1,25 @@
+apiVersion: v1
+entries:
+  shak3s-example:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2023-08-08T10:25:00.544539-07:00"
+    description: A Helm chart for Kubernetes
+    digest: 4d4487538e56e6fbb621fd2ae867841091484a2d487b70689897a6d4394ea652
+    name: shak3s-example
+    type: application
+    urls:
+    - https://github.com/Milkshak3s/redteam-charts/releases/download/shak3s-example-0.1.0/shak3s-example-0.1.0.tgz
+    version: 0.1.0
+  sliver-multiplayer:
+  - apiVersion: v2
+    appVersion: v1.5.41
+    created: "2023-08-08T10:25:00.694714-07:00"
+    description: A Helm chart for a Sliver C2 in multiplayer mode
+    digest: 4787bfc19ac0318f711c4932b71361008d2ca1d1534759564c4ff6839afd860c
+    name: sliver-multiplayer
+    type: application
+    urls:
+    - https://github.com/Milkshak3s/redteam-charts/releases/download/sliver-multiplayer-0.1.0/sliver-multiplayer-0.1.0.tgz
+    version: 0.1.0
+generated: "2023-08-08T10:25:00.694725-07:00"
