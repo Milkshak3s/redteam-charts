@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "sliver-multiplayer.fullname" . }}-test-connection"
+  labels:
+    {{- include "sliver-multiplayer.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "sliver-multiplayer.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never
